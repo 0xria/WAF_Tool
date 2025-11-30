@@ -4,8 +4,8 @@ import re
 
 app = Flask(__name__)
 
-# Backend server URL (change this to your actual backend)
-BACKEND_URL = 'http://localhost:5001'
+# Backend server URL to which requests will be forwarded if safe
+BACKEND_URL = 'http://127.0.0.1:5000'
 
 # Patterns for detecting common attacks
 SQL_INJECTION_PATTERNS = [
